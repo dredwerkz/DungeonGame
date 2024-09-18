@@ -1,4 +1,6 @@
-﻿using DungeonGame.GameCore.Services;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using DungeonGame.Game.Extensions;
 
 namespace DungeonGame
 {
@@ -6,8 +8,15 @@ namespace DungeonGame
     {
         static void Main(string[] args)
         {
-          var testGameStart = new TestGameStart();
-          testGameStart.StartGame();
+            var host = Host.CreateDefaultBuilder()
+            .ConfigureServices((context, services) =>
+            {
+                services.AddGameServices();
+            })
+            .Build();
+
+            var game = host.Services.GetRequiredService<ITestGameStart>();
+            game.StartGame();
         }
     }
 }

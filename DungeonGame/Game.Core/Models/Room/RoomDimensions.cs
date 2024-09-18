@@ -1,4 +1,4 @@
-namespace DungeonGame.GameCore.Models.Room;
+namespace DungeonGame.Game.Core.Models.Room;
 
 public class RoomDimensions
 {

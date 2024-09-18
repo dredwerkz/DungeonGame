@@ -1,4 +1,4 @@
-namespace DungeonGame.GameCore.Models.Character;
+namespace DungeonGame.Game.Core.Models.Character;
 public class Character
 {
     public string Name { get; set; } = null!;

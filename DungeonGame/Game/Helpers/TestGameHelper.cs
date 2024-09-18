@@ -1,14 +1,14 @@
-using DungeonGame.GameCore.Interfaces;
-using DungeonGame.GameCore.Models.Character;
-using DungeonGame.GameCore.Models.Room;
+using DungeonGame.Game.Core.Interfaces;
+using DungeonGame.Game.Core.Models.Character;
+using DungeonGame.Game.Core.Models.Room;
 
-namespace DungeonGame.GameCore.Helpers;
+namespace DungeonGame.Game.Helpers;
 
-public class TestGameHelper(): ITestGameHelper
+public class TestGameHelper : ITestGameHelper
 {
     public (Character, Character, Room) ArrangeTestGame()
     {
-                var charReginald = new Character()
+        var charReginald = new Character()
         {
             Name = "Reginald",
             Class = "Fighter",
