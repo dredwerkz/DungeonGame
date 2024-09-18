@@ -1,12 +1,13 @@
-﻿namespace DungeonGame
+﻿using DungeonGame.GameCore.Services;
+
+namespace DungeonGame
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello, World! Say something: ");
-            var readLine = Console.ReadLine();
-            Console.WriteLine($"You typed {readLine}");
+          var testGameStart = new TestGameStart();
+          testGameStart.StartGame();
         }
     }
 }
