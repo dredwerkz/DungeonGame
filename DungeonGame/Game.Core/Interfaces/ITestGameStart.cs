@@ -1,4 +1,7 @@
-public interface ITestGameStart
+namespace DungeonGame.Game.Core.Interfaces
 {
-    public void StartGame();
+    public interface ITestGameStart
+    {
+        public void StartGame();
+    }
 }
