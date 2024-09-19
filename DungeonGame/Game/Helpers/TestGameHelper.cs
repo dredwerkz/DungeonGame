@@ -6,16 +6,16 @@ namespace DungeonGame.Game.Helpers;
 
 public class TestGameHelper : ITestGameHelper
 {
-    public (Character, Character, Room) ArrangeTestGame()
+    public (PlayerCharacter, PlayerCharacter, Room) ArrangeTestGame()
     {
-        var charReginald = new Character()
+        var charReginald = new PlayerCharacter()
         {
             Name = "Reginald",
             Class = "Fighter",
             Level = 1
         };
 
-        var charSlash = new Character()
+        var charSlash = new PlayerCharacter()
         {
             Name = "Slash",
             Class = "Rogue",

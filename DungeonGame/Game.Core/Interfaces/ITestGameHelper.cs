@@ -5,5 +5,5 @@ namespace DungeonGame.Game.Core.Interfaces;
 
 public interface ITestGameHelper
 {
-    public (Character, Character, Room) ArrangeTestGame();
+    public (PlayerCharacter, PlayerCharacter, Room) ArrangeTestGame();
 }

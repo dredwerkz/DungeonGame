@@ -17,7 +17,11 @@ namespace DungeonGame
             .Build();
 
             var game = host.Services.GetRequiredService<ITestGameStart>();
+
             game.StartGame();
+
+            var hold = Console.Read();
+
         }
     }
 }
