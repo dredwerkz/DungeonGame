@@ -1,6 +1,6 @@
 namespace DungeonGame.Game.Core.Interfaces
 {
-    public interface ITestGameStart
+    public interface ITestGameService
     {
         public void StartGame();
     }

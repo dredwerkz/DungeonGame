@@ -16,12 +16,9 @@ namespace DungeonGame
             })
             .Build();
 
-            var game = host.Services.GetRequiredService<ITestGameStart>();
+            var game = host.Services.GetRequiredService<ITestGameService>();
 
             game.StartGame();
-
-            var hold = Console.Read();
-
         }
     }
 }

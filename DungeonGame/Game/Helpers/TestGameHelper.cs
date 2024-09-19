@@ -11,14 +11,14 @@ public class TestGameHelper : ITestGameHelper
         var charReginald = new PlayerCharacter()
         {
             Name = "Reginald",
-            Class = "Fighter",
+            PlayerClass = "Fighter",
             Level = 1
         };
 
         var charSlash = new PlayerCharacter()
         {
             Name = "Slash",
-            Class = "Rogue",
+            PlayerClass = "Rogue",
             Level = 1
         };
 
