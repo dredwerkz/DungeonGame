@@ -11,12 +11,12 @@ namespace DungeonGame.Game.Extensions
     {
         public static IServiceCollection AddGameServices(this IServiceCollection services)
         {
-            services.AddTransient<ITestGameService, TestGameService>();
-            services.AddTransient<ITestGameHelper, TestGameHelper>();
-            services.AddTransient<IDiceService, DiceService>();
-            services.AddTransient<IDiceHelper, DiceHelper>();
-            services.AddTransient<ICharacterService, CharacterService>();
-            services.AddTransient<ICharacterHelper, CharacterHelper>();
+            services.AddSingleton<ITestGameService, TestGameService>();
+            services.AddSingleton<ITestGameHelper, TestGameHelper>();
+            services.AddSingleton<IDiceService, DiceService>();
+            services.AddSingleton<IDiceHelper, DiceHelper>();
+            services.AddSingleton<ICharacterService, CharacterService>();
+            services.AddSingleton<ICharacterHelper, CharacterHelper>();
 
             return services;
         }
